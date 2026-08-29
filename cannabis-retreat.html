@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cannabis Wellness Retreat, Jamaica | Curated Travel Joynt</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Jost:wght@400;500;600&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --eggplant: #3B2C59;
+    --lavender: #B89BD6;
+    --periwinkle: #9AAD99;
+    --cotton-candy: #F2B6D8;
+    --navy: #1F2A5A;
+    --caribbean: #2F7C82;
+    --cream: #FAF6F1;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Jost', sans-serif;
+    color: var(--eggplant);
+    background: var(--cream);
+    line-height: 1.6;
+  }
+  h1, h2, h3 { font-family: 'Merriweather', serif; font-weight: 900; color: var(--eggplant); }
+  .script { font-family: 'Dancing Script', cursive; color: var(--caribbean); }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+
+  .banner {
+    background: var(--eggplant);
+    color: var(--cream);
+    text-align: center;
+    padding: 10px 16px;
+    font-size: 0.85rem;
+    letter-spacing: 0.03em;
+  }
+
+  header.hero {
+    background: linear-gradient(160deg, var(--navy) 0%, var(--eggplant) 55%, var(--caribbean) 100%);
+    color: var(--cream);
+    padding: 80px 24px 64px;
+    text-align: center;
+  }
+  header.hero .script { font-size: 1.4rem; display: block; margin-bottom: 8px; color: var(--cotton-candy); }
+  header.hero h1 {
+    color: var(--cream);
+    font-size: clamp(2rem, 5vw, 3rem);
+    line-height: 1.15;
+    margin-bottom: 18px;
+  }
+  header.hero p.sub {
+    font-size: 1.1rem;
+    max-width: 560px;
+    margin: 0 auto 32px;
+    color: var(--lavender);
+  }
+  .cta-btn {
+    display: inline-block;
+    background: var(--cotton-candy);
+    color: var(--eggplant);
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 14px 32px;
+    border-radius: 4px;
+    letter-spacing: 0.02em;
+  }
+  .cta-btn:hover { background: var(--lavender); }
+  .cta-btn:disabled { cursor: not-allowed; opacity: 0.6; }
+
+  .waitlist-form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .waitlist-form input[type="email"] {
+    padding: 14px 16px;
+    border-radius: 4px;
+    border: 1px solid rgba(255,255,255,0.4);
+    font-family: 'Jost', sans-serif;
+    font-size: 1rem;
+    min-width: 260px;
+  }
+  .waitlist-form button {
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  .form-note {
+    font-size: 0.8rem;
+    color: var(--lavender);
+    margin-top: 10px;
+  }
+  .waitlist-perk {
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.02em;
+    color: var(--cotton-candy);
+    margin-bottom: 16px;
+  }
+
+  section { padding: 56px 0; border-bottom: 1px solid rgba(59,44,89,0.1); }
+  section:last-of-type { border-bottom: none; }
+  section h2 { font-size: 1.6rem; margin-bottom: 20px; }
+  section p { max-width: 680px; margin-bottom: 16px; font-size: 1.02rem; }
+
+  .details-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 24px;
+  }
+  .detail-card {
+    background: #fff;
+    border-left: 4px solid var(--caribbean);
+    padding: 18px 20px;
+    border-radius: 4px;
+  }
+  .detail-card .label {
+    font-family: 'Jost', sans-serif;
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--caribbean);
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  ul.experience-list { list-style: none; margin-top: 20px; }
+  ul.experience-list li {
+    padding: 14px 0 14px 32px;
+    position: relative;
+    border-bottom: 1px solid rgba(59,44,89,0.08);
+  }
+  ul.experience-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 20px;
+    width: 10px;
+    height: 10px;
+    background: var(--cotton-candy);
+    border-radius: 50%;
+  }
+  ul.experience-list li strong { display: block; color: var(--eggplant); }
+
+  .philosophy {
+    background: var(--eggplant);
+    color: var(--cream);
+  }
+  .philosophy .wrap p { color: var(--lavender); }
+  .philosophy h2 { color: var(--cream); }
+
+  .giveback {
+    background: var(--periwinkle);
+    color: var(--eggplant);
+  }
+  .giveback h2 { color: var(--eggplant); }
+
+  footer.closing {
+    text-align: center;
+    padding: 64px 24px 80px;
+    background: var(--navy);
+    color: var(--cream);
+  }
+  footer.closing h2 { color: var(--cream); margin-bottom: 16px; }
+  footer.closing p { color: var(--lavender); max-width: 520px; margin: 0 auto 28px; }
+</style>
+</head>
+<body>
+
+<div class="banner">
+  Waitlist open now. Celebrate 4/20 in Jamaica, on 4/20. April 18-22, 2027.
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="script">Curated Travel Joynt presents</span>
+    <h1>A Cannabis Wellness Retreat in Jamaica, Built for the Two of You</h1>
+    <p class="sub">Five days in Jamaica that land you there for 4/20, on 4/20. Small group. Real education, real rest, and a retreat designed around your relationship.</p>
+    <p class="waitlist-perk">Waitlist gets first dibs on the best rooms and special pricing.</p>
+    <a class="cta-btn" href="https://joyati-lockley.systeme.io/jamaica-retreat-waitlist">Join the Waitlist</a>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>What This Is</h2>
+    <p>This is not a stigma party disguised as wellness. It is a small, curated group of couples spending a week in Jamaica learning how cannabis fits into real rest, real connection, and real health, guided by people who actually know the plant.</p>
+    <p>You leave with more than a tan. You leave with knowledge you did not have when you landed, and a few days of your relationship getting the attention it does not get at home.</p>
+    <div class="details-grid">
+      <div class="detail-card">
+        <span class="label">Destination</span>
+        Jamaica, location TBD
+      </div>
+      <div class="detail-card">
+        <span class="label">Format</span>
+        Small group, couples only
+      </div>
+      <div class="detail-card">
+        <span class="label">Dates</span>
+        April 18-22, 2027 (4/20 included)
+      </div>
+      <div class="detail-card">
+        <span class="label">Booking</span>
+        Waitlist open, first dibs on best rooms and special pricing
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>What's Being Planned</h2>
+    <p>Programming is still being finalized and subject to change. Here is what is confirmed so far:</p>
+    <ul class="experience-list">
+      <li><strong>Wellness &amp; Education</strong>Cannabis wellness and educational experiences guided by people who actually know the plant.</li>
+      <li><strong>Farm to Table</strong>A farm to table infused dining experience, ingredients sourced from the land you tour.</li>
+      <li><strong>On the Land</strong>A working farm tour, not a script read by a tour guide.</li>
+      <li><strong>On the Water</strong>A catamaran experience.</li>
+      <li><strong>For the Two of You</strong>Professional photographs to take home.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="philosophy">
+  <div class="wrap">
+    <h2>Why This Is Different</h2>
+    <p>Most cannabis travel is built around access. This one is built around understanding. The goal is not permission to use cannabis in public without judgment, that part is easy. The goal is walking away with real wellness and medical knowledge about the plant that you can actually use, taught by practitioners and educators, not influencers.</p>
+    <p>Couples leave more grounded. Not looser. Grounded.</p>
+  </div>
+</section>
+
+<section class="giveback">
+  <div class="wrap">
+    <h2>Bless Up Bags</h2>
+    <p>Part of this retreat funds Bless Up Bags, giving back to underprivileged families in the local Jamaican community we are hosted by. Travel should leave a place better than it found it. This one is designed to.</p>
+  </div>
+</section>
+
+<footer class="closing">
+  <div class="wrap">
+    <h2>Want In?</h2>
+    <p>Space is limited to a small number of couples. Get on the waitlist now and you will be the first to know when location, pricing, and booking open.</p>
+    <p class="waitlist-perk">First dibs on the best rooms. Special pricing. Reserved for the waitlist.</p>
+    <a class="cta-btn" href="https://joyati-lockley.systeme.io/jamaica-retreat-waitlist">Join the Waitlist</a>
+  </div>
+</footer>
+
+</body>
+</html>
