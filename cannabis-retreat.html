@@ -146,6 +146,23 @@
     object-fit: cover;
   }
   .photo-band.single img { height: 420px; }
+  .photo-band.frame {
+    background: var(--navy);
+    padding: 40px 24px;
+  }
+  .photo-band.frame .photo-row {
+    display: flex;
+    justify-content: center;
+  }
+  .photo-band.frame img {
+    height: auto;
+    max-height: 640px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 6px;
+    box-shadow: 0 16px 40px rgba(0,0,0,0.3);
+  }
 
   ul.experience-list { list-style: none; margin-top: 20px; }
   ul.experience-list li {
@@ -198,7 +215,7 @@
   <div class="wrap">
     <img src="assets/image.png" alt="Curated Travel Joynt" class="site-logo">
     <span class="script">Curated Travel Joynt presents</span>
-    <h1>A Cannabis Wellness Retreat in Jamaica, Built for the Two of You</h1>
+    <h1>Reconnect With Your Partner Through Cannabis Wellness</h1>
     <p class="sub">Five days in Jamaica that land you there for 4/20, on 4/20. Small group. Real education, real rest, and a retreat designed around your relationship.</p>
     <p class="waitlist-perk">Waitlist gets first dibs on the best rooms and special pricing.</p>
     <a class="cta-btn" href="https://joyati-lockley.systeme.io/jamaica-retreat-waitlist">Join the Waitlist</a>
@@ -231,9 +248,9 @@
   </div>
 </section>
 
-<section class="photo-band single">
+<section class="photo-band frame">
   <div class="photo-row">
-    <img src="assets/retreat-1.jpg" alt="Beachfront in Jamaica">
+    <img src="assets/retreat-1.jpg" alt="Beachfront in Jamaica, palm-thatched shade over lounge chairs">
   </div>
 </section>
 
