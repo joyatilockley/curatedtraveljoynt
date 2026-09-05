@@ -131,6 +131,22 @@
     margin-bottom: 6px;
   }
 
+  .photo-band {
+    padding: 0;
+    border-bottom: 1px solid rgba(59,44,89,0.1);
+  }
+  .photo-band .photo-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  .photo-band img {
+    display: block;
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+  }
+  .photo-band.single img { height: 420px; }
+
   ul.experience-list { list-style: none; margin-top: 20px; }
   ul.experience-list li {
     padding: 14px 0 14px 32px;
@@ -215,17 +231,9 @@
   </div>
 </section>
 
-<section>
-  <div class="wrap">
-    <h2>What's Being Planned</h2>
-    <p>Programming is still being finalized and subject to change. Here is what is confirmed so far:</p>
-    <ul class="experience-list">
-      <li><strong>Wellness &amp; Education</strong>Cannabis wellness and educational experiences guided by people who actually know the plant.</li>
-      <li><strong>Farm to Table</strong>A farm to table infused dining experience, ingredients sourced from the land you tour.</li>
-      <li><strong>On the Land</strong>A working farm tour, not a script read by a tour guide.</li>
-      <li><strong>On the Water</strong>A catamaran experience.</li>
-      <li><strong>For the Two of You</strong>Professional photographs to take home.</li>
-    </ul>
+<section class="photo-band single">
+  <div class="photo-row">
+    <img src="assets/retreat-1.jpg" alt="Beachfront in Jamaica">
   </div>
 </section>
 
@@ -234,6 +242,12 @@
     <h2>Why This Is Different</h2>
     <p>Most cannabis travel is built around access. This one is built around understanding. The goal is not permission to use cannabis in public without judgment, that part is easy. The goal is walking away with real wellness and medical knowledge about the plant that you can actually use, taught by practitioners and educators, not influencers.</p>
     <p>Couples leave more grounded. Not looser. Grounded.</p>
+  </div>
+</section>
+
+<section class="photo-band single">
+  <div class="photo-row">
+    <img src="assets/retreat-2.jpg" alt="Jamaica sunset over the water">
   </div>
 </section>
 
