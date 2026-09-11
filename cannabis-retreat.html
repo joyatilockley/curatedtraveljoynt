@@ -170,6 +170,28 @@
     border-radius: 6px;
     box-shadow: 0 16px 40px rgba(0,0,0,0.3);
   }
+  .photo-band.duo {
+    background: var(--navy);
+    padding: 40px 24px;
+  }
+  .photo-band.duo .photo-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .photo-band.duo img {
+    height: 480px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 16px 40px rgba(0,0,0,0.3);
+  }
+  @media (max-width: 640px) {
+    .photo-band.duo .photo-row { grid-template-columns: 1fr; }
+    .photo-band.duo img { height: 320px; }
+  }
 
   ul.experience-list { list-style: none; margin-top: 20px; }
   ul.experience-list li {
@@ -217,6 +239,22 @@
   }
   footer.closing h2 { color: var(--cream); margin-bottom: 16px; }
   footer.closing p { color: var(--lavender); max-width: 520px; margin: 0 auto 28px; }
+  footer.closing .script { font-size: 1.6rem; display: block; margin-bottom: 20px; color: var(--cotton-candy); }
+  .footer-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 24px;
+    margin-bottom: 24px;
+    list-style: none;
+  }
+  .footer-contact a {
+    color: var(--lavender);
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+  .footer-contact a:hover { color: var(--cotton-candy); }
+  .footer-fine { font-size: 0.8rem; color: rgba(250,246,241,0.6); max-width: none; margin-bottom: 0; }
 </style>
 </head>
 <body>
@@ -234,12 +272,14 @@
     <p class="sub">This retreat is built for one outcome: finding your way back to each other, through ocean rituals, cannabis wellness, and Jamaican culture rooted in where this plant originally comes from.</p>
     <p class="waitlist-perk">Join the VIP waitlist for Couples 420, Jamaica, spring 2027, for early access and a discounted price not available to the public.</p>
     <a class="cta-btn" href="https://joyati-lockley.systeme.io/jamaica-retreat-waitlist">Join the Waitlist</a>
+    <p class="form-note">We'll only email you about this retreat. No spam, unsubscribe anytime.</p>
   </div>
 </header>
 
-<section class="photo-band frame">
+<section class="photo-band duo">
   <div class="photo-row">
     <img src="assets/joyati-jamaica-beach.jpg" alt="Joyati on the beach in Jamaica, scouting the retreat location">
+    <img src="assets/retreat-1.jpg" alt="Beachfront loungers at the retreat location in Jamaica">
   </div>
 </section>
 
@@ -266,6 +306,28 @@
     </div>
   </div>
 </section>
+
+<section id="privacy">
+  <div class="wrap">
+    <h2>Privacy Policy</h2>
+    <p>When you join this waitlist, we collect your name and email so we can send you retreat updates: pricing, dates, and booking details, as they're confirmed.</p>
+    <p>We don't sell or share your information. We don't spam you. You'll hear from us about this retreat and, occasionally, other Curated Travel Joynt offerings. Unsubscribe anytime from the link in any email, or by emailing us directly.</p>
+    <p>Questions about your data? Email joyatilockley@ctjtravel.com.</p>
+  </div>
+</section>
+
+<footer class="closing">
+  <div class="wrap">
+    <span class="script">Curated Travel Joynt</span>
+    <ul class="footer-contact">
+      <li><a href="https://ctjtravel.com">ctjtravel.com</a></li>
+      <li><a href="mailto:joyatilockley@ctjtravel.com">joyatilockley@ctjtravel.com</a></li>
+      <li><a href="tel:+19194753871">919.475.3871</a></li>
+      <li><a href="https://instagram.com/joyati.lockley" target="_blank" rel="noopener">@joyati.lockley</a></li>
+    </ul>
+    <p class="footer-fine">&copy; 2026 Curated Travel Joynt. Joyati Lockley, Fora Travel Advisor, IATA 33520476.</p>
+  </div>
+</footer>
 
 </body>
 </html>
